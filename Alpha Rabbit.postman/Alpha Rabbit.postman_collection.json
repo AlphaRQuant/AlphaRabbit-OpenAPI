@@ -1,0 +1,183 @@
+{
+	"info": {
+		"_postman_id": "b18818eb-fb95-45e7-9c16-b7357588f859",
+		"name": "Alpha Rabbit",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18433168"
+	},
+	"item": [
+		{
+			"name": "Xlab-Open-Api",
+			"item": [
+				{
+					"name": "getXlabRecognizePattern",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/getXlabRecognizePattern?kInterval=1h&start=2023-09-01T00:00:00&end=2023-10-01T23:59:59&patternId=1&page=1&per_page=5&symbolType=futures",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"getXlabRecognizePattern"
+							],
+							"query": [
+								{
+									"key": "kInterval",
+									"value": "1h",
+									"description": "K线周期 1d 4h 1h"
+								},
+								{
+									"key": "start",
+									"value": "2023-09-01T00:00:00",
+									"description": "查询入选开始时间 2023-09-01T00:00:00 UTC 0"
+								},
+								{
+									"key": "end",
+									"value": "2023-10-01T23:59:59",
+									"description": "查询入选结束时间 2023-09-01T00:00:00 UTC 0"
+								},
+								{
+									"key": "patternId",
+									"value": "1",
+									"description": "(Required) 形态ID\n1\t出水芙蓉\n2\t老鸭头\n3\t三浪上涨\n4\t乌云盖顶\n5\t断头铡刀\n6\t三浪下跌\n7\t箱体震荡\n8\t三角形\n9\t绝地反击\n10\t金针探底\n11\t射击之星\n12\tM顶\n13\t头肩顶\n14\tW底\n15\t头肩底\n16\t黄金坑"
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"description": "(Required) 请求第几页"
+								},
+								{
+									"key": "per_page",
+									"value": "5",
+									"description": "分页大小"
+								},
+								{
+									"key": "symbolType",
+									"value": "futures",
+									"description": "futures合约，spot现货"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getXlabRecognizePattern",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/getXlabRecognizePattern?kInterval=1h&start=2023-09-01T00:00:00&end=2023-09-01T23:59:59&patternId=9&page=1&per_page=5&symbolType=futures&symbol=DYDXUSDT",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"getXlabRecognizePattern"
+									],
+									"query": [
+										{
+											"key": "kInterval",
+											"value": "1h",
+											"description": "K线周期 1d 4h 1h"
+										},
+										{
+											"key": "start",
+											"value": "2023-09-01T00:00:00",
+											"description": "查询入选开始时间 2023-09-01T00:00:00 UTC 0"
+										},
+										{
+											"key": "end",
+											"value": "2023-09-01T23:59:59",
+											"description": "查询入选结束时间 2023-09-01T00:00:00 UTC 0"
+										},
+										{
+											"key": "patternId",
+											"value": "9",
+											"description": "(Required) 形态ID\n1\t出水芙蓉\n2\t老鸭头\n3\t三浪上涨\n4\t乌云盖顶\n5\t断头铡刀\n6\t三浪下跌\n7\t箱体震荡\n8\t三角形\n9\t绝地反击\n10\t金针探底\n11\t射击之星\n12\tM顶\n13\t头肩顶\n14\tW底\n15\t头肩底\n16\t黄金坑"
+										},
+										{
+											"key": "page",
+											"value": "1",
+											"description": "(Required) 请求第几页"
+										},
+										{
+											"key": "per_page",
+											"value": "5",
+											"description": "分页大小"
+										},
+										{
+											"key": "symbolType",
+											"value": "futures",
+											"description": "futures合约，spot现货"
+										},
+										{
+											"key": "symbol",
+											"value": "DYDXUSDT",
+											"description": "交易代码"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 01 Nov 2023 06:36:19 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Server",
+									"value": "nginx/1.19.2"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=15724800; includeSubDomains"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 0,\n    \"start\": \"2023-09-01T00:00:00\",\n    \"end\": \"2023-09-01T23:59:59\",\n    \"len\": 1,\n    \"data\": [\n        {\n            \"kInterval\": \"1h\",\n            \"symbol_type\": \"futures\",\n            \"patterName\": \"绝地反击\",\n            \"patternEnd\": \"2023-09-01T00:00:00\",\n            \"extra\": {},\n            \"is_delete\": 0,\n            \"create_id\": 0,\n            \"update_id\": 0,\n            \"symbol\": \"DYDX/USDT\",\n            \"exchange\": \"BINANCE\",\n            \"patternId\": 9,\n            \"patternStart\": \"2023-08-31T20:00:00\",\n            \"matchScore\": 1,\n            \"id\": 915376,\n            \"create_ts\": \"2023-09-26T06:33:22\",\n            \"update_ts\": \"2023-09-26T06:33:22\"\n        }\n    ],\n    \"pagination\": {\n        \"ptn_count\": 1,\n        \"current_page\": 1,\n        \"per_page\": 5\n    }\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "/"
+		}
+	]
+}
